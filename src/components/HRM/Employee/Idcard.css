@@ -1,0 +1,219 @@
+/* for id card */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+:root{
+    --white: #ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.main_div {
+    display: grid;
+    grid-template-columns: 380px 380px;
+    grid-template-rows: 640px;
+    font-family: 'Open Sans', sans-serif;
+    grid-gap: 10px;
+}
+.font_page {
+	background: var(--white);
+	text-align: center;
+	box-shadow: 0 0 10px #bbbbbb;
+	border-radius: 15px;
+    
+}
+.back_page {
+    background-color: #925A22;
+    color: var(--white);
+    text-align: center;
+    box-shadow: 0 0 10px #bbbbbb;
+    border-radius: 10px;
+}
+.bg_color {
+    background: var(--white);
+    position: relative;
+    z-index: 1;
+    padding: 15px 0 0 0;
+    background-color: #925A22;
+    border-radius: 10px;
+  }
+  .bg_color::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 50%;
+    background-color: var(--white);
+    /* clip-path: polygon(100% 0, 100% 35%, 100% 100%, 83% 86%, 38% 81%, 20% 87%, 1% 100%, 0% 35%, 0 0); */
+    content: "";
+    z-index: -1;
+    border-top-left-radius: 100%;
+}
+.bg_color::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 50%;
+    background-color: var(--white);
+    /* clip-path: polygon(100% 0, 100% 35%, 100% 100%, 83% 86%, 38% 81%, 20% 87%, 1% 100%, 0% 35%, 0 0); */
+    content: "";
+    z-index: -1;
+    border-top-right-radius: 100%;
+}
+.bg_color img {
+	width: 180px;
+	border-radius: 50%;
+	height: 180px;
+	object-fit: cover;
+	display: block;
+	margin: 0 auto;
+	border: 2px solid;
+	padding: 8px;
+}
+
+
+.bg_color h3 {
+    color: var(--white);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 20px;
+    font-weight: 500;
+  }
+  .profile_info h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .job_title {
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+  .phone_number {
+    font-size: 18px;
+    line-height: 36px;
+  }
+  .phone_number i {
+    font-size: 22px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #000000;
+    line-height: 35px;
+  }
+  .date_info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    align-content: center;
+    align-items: flex-end;
+  }
+  .id_card_logo img {
+	max-width: 280px;
+	display: block;
+	margin: 0 auto;
+    margin-bottom: 25px;
+}
+.font_page_discription{
+    padding: 0 20px;
+}
+.profile_info {
+	padding: 40px 0;
+}
+/* Back Post */
+.shap {
+	height: 300px;
+	background: var(--white);
+	border-radius: 10px 10px 38% 38%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+
+.address_info {
+    display: flex;
+    padding: 40px 0;
+    position: relative;
+  }
+
+  .address_info::before {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 2px;
+	height: 90%;
+	background: #ffffff;
+	content: "";
+}
+  .address_info .address:first-child {
+    text-align: right;
+    width: 50%;
+    padding-right: 15px;
+  }
+  .address_info .address:last-child {
+    text-align: left;
+    width: 50%;
+    padding-left: 15px;
+  }
+  .address span {
+    display: block;
+    font-size: 29px;
+    font-weight: 500;
+  }
+  .footer_text p i {
+    font-size: 22px;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #fff;
+    line-height: 35px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .simple_text {
+    color: #925A22;
+    font-size: 53px;
+    line-height: 39px;
+    letter-spacing: 2px;
+  }
+  .simple_text small {
+    text-align: right;
+    display: block;
+    opacity: 0.5;
+  }
+  .footer_text {
+    text-align: left;
+    padding-left: 12%;
+  }
+  .footer_text p {
+    margin-bottom: 10px;
+  }
+  .notifi_bar{
+    margin: "20px 0px";
+    border-bottom: 1px solid #F0F2F5;
+  }
+
+  .glossy_card{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 1px 6px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  .glossy_card > .ant-col {
+    padding-left: 1px!important;
+    padding-right: 1px!important;
+  }
+
+
+.summary_card > .ant-card-body > h3{
+  font-size: 14px!important;
+  font-weight: 700;
+  border-bottom: 2px solid rgb(202, 202, 202);
+  display: inline-block;
+  padding-bottom: 2px;
+  font-family: sans-serif;
+}
